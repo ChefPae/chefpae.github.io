@@ -1,1 +1,1 @@
-Tegu on minu e-portfolio kaustaga.
+Tegu on minu (Rudolf Pae) e-portfolio veebilehe kaustaga.
