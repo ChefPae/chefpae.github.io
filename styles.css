@@ -7,7 +7,7 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 0;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -17,14 +17,27 @@ header {
     align-items: center;
 }
 
-a {
+header img.logo {
+    width: 64px;
+    height: 64px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li a {
     color: #fff;
-    position: centre;
     text-decoration: none;
 }
 
-.contact-header {
-    text-align: center;
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 0 10px;
 }
 
 button {
@@ -42,34 +55,14 @@ button {
     transition: background-color 0.3s, transform 0.2s;
 }
 
-
 button:hover {
     background-color: #999999;
     transform: scale(1.1);
 }
 
-.logo {
-    width: 32px;
-    height: 32px;
-    justify-content: right;
-}
+.data:hover {
+    transform: scale(1.1);
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-
-nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #e0e0e0;
-    text-decoration: none;
 }
 
 .section {
@@ -77,28 +70,42 @@ nav ul li a {
     padding: 50px;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     color: #e0e0e0;
     background-color: #262626;
+    padding: 10px 20px;
 }
 
-.portfolio-items {
+.datas {
     display: flex;
     gap: 50px;
 }
 
-.portfolio-item {
+.data {
     text-align: center;
+    transition: transform 0.2s;
+    position: relative;
 }
 
-.portfolio-item img {
+.data img {
     max-width: 300px;
+    transition: transform 0.2s; 
 }
 
-.portfolio-item h3 {
+.data h3 {
     margin-top: 20px;
+}
+
+
+.data:hover {
+    transform: scale(1.1);
+}
+
+
+.data::before {
+    content: "";
+    display: block;
+    height: 60px;
 }
 
 .contact-icons {
@@ -107,6 +114,9 @@ h3 {
     justify-content: center;
 }
 
+.contact-header {
+    text-align: center;
+}
 .icon {
     font-size: 24px;
     color: #e0e0e0;
@@ -117,33 +127,6 @@ h3 {
     color: #ffffff;
 }
 
-.fa-phone:before {
-    content: "\f095";
-}
-
-.fa-envelope:before {
-    content: "\f0e0";
-}
-
-.study-items {
-    display: flex;
-    gap: 50px;
-}
-
-.study-items {
+footer {
     text-align: center;
-}
-
-.study-items img {
-    max-width: 300px;
-}
-
-.study-items h3 {
-    margin-top: 20px;
-}
-
-header img {
-    width: 32px;
-    height: 32px;
-    margin-left: auto;
 }
